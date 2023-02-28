@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=${process.env.REACT_APP_NEWS_API_KEY}`)
 .then(response => {
-  console.log(response)
+  console.log(response.data.articles)
 });
 
 function App() {
